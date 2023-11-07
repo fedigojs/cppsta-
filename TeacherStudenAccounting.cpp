@@ -38,7 +38,7 @@ int main() {
         {
             // Добавление студента
             Human student;
-            student.putInfoHuman(); // Заполнение информации о студенте
+            student.putInfoStudent(); // Заполнение информации о студенте
             student.setRoles("student"); // Установка роли студента
             humans.push_back(student); // Добавление в вектор
             cout << "Студент успішно доданий!" << endl;
@@ -48,7 +48,7 @@ int main() {
         {
             // Добавление учителя
             Human teacher;
-            teacher.putInfoHuman(); // Заполнение информации об учителе
+            teacher.putInfoTeacher(); // Заполнение информации об учителе
             teacher.setRoles("teacher"); // Установка роли учителя
             humans.push_back(teacher); // Добавление в вектор
             cout << "Вчитель успішно доданий!" << endl;
