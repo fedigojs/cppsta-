@@ -37,7 +37,7 @@ int main() {
         case 1:
         {
             // Добавление студента
-            Human student;
+            Student student;
             student.putInfoStudent(); // Заполнение информации о студенте
             student.setRoles("student"); // Установка роли студента
             humans.push_back(student); // Добавление в вектор
@@ -47,7 +47,7 @@ int main() {
         case 2:
         {
             // Добавление учителя
-            Human teacher;
+            Teacher teacher;
             teacher.putInfoTeacher(); // Заполнение информации об учителе
             teacher.setRoles("teacher"); // Установка роли учителя
             humans.push_back(teacher); // Добавление в вектор
