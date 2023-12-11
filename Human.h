@@ -29,7 +29,7 @@ public:
 	}
 
 
-	~Human() {}
+	virtual ~Human() {}
 
 	// Getter
 	string getFullName() const {
@@ -86,7 +86,7 @@ public:
 		hobbies.insert(hobbies.end(), newHobbies.begin(), newHobbies.end());
 	}
 
-	void putInfoHuman() {
+	virtual void putInfo() {
 		string fullName, firstName, lastName, patronymic;
 		int age;
 		string gender, adress, role;
@@ -119,7 +119,7 @@ public:
 	}
 
 
-	void printInfoHuman() const {
+	virtual void printInfo() const {
 		cout << "ПІБ: " << getFullName() << endl;
 		cout << "Вік: " << age << endl;
 		cout << "Стать: " << gender << endl;
@@ -131,21 +131,6 @@ public:
 		cout << endl;
 	}
 
-	void saveToFile(const string& filename) const {
-		ofstream file(filename, ios::app); // ios::app - режим дополнения, чтобы не перезаписывать файл
-		if (file.is_open()) {
-			file << "Ім'я: " << getFullName() << "\n";
-			file << "Вік: " << age << "\n";
-			file << "Стать: " << gender << "\n";
-			file << "Адрес: " << adress << "\n";
-			file << "Хоббі: ";
-			for (const auto& hobby : hobbies) {
-				file << hobby << ", ";
-			}
-			file << "\n--------------------------------\n";
-			file.close();
-		}
-	}
 
 private:
 	map <string, string> name;

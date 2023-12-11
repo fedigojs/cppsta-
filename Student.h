@@ -49,8 +49,8 @@ public:
 		tokenRating = newTokenRating;
 	}
 
-	void putInfoStudent() {
-		putInfoHuman();
+	void putInfo() override {
+		Human::putInfo();
 		cout << "Введіть номер курсу: "; getline(cin, courseNumber);
 		cout << "Введіть номер группи: "; getline(cin, groupNumber);
 		cout << "Введіть спеціальність: "; getline(cin, speciality);
@@ -60,8 +60,8 @@ public:
 	}
 
 
-	void printInfoStudent() {
-		printInfoHuman();
+	void printInfo() const override {
+		Human::printInfo();
 		cout << "Курс: " << courseNumber << endl;
 		cout << "Номер группи: " << groupNumber << endl;
 		cout << "Спеціальність: " << speciality << endl;

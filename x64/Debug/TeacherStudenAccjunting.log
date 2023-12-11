@@ -1,0 +1,10 @@
+﻿  TeacherStudenAccounting.cpp
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(67,9): warning C4984: 'if constexpr' is a C++17 language extension
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(60,10): message : This diagnostic occurred in the compiler generated function 'void PersonManager::savePersonToFile(const T &)'
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(74,14): warning C4984: 'if constexpr' is a C++17 language extension
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(60,10): message : This diagnostic occurred in the compiler generated function 'void PersonManager::savePersonToFile(const T &)'
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(102,9): warning C4984: 'if constexpr' is a C++17 language extension
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(97,10): message : This diagnostic occurred in the compiler generated function 'void PersonManager::loadPersonFromFile(T &,std::ifstream &)'
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(105,14): warning C4984: 'if constexpr' is a C++17 language extension
+Z:\MyProject\hduStudy\cpplab\cppspa\PersonManager.h(97,10): message : This diagnostic occurred in the compiler generated function 'void PersonManager::loadPersonFromFile(T &,std::ifstream &)'
+  TeacherStudenAccjunting.vcxproj -> Z:\MyProject\hduStudy\cpplab\cppspa\x64\Debug\TeacherStudenAccounting.exe

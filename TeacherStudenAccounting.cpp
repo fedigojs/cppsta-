@@ -1,6 +1,8 @@
 ﻿#include "Human.h"
 #include "Teacher.h"
 #include "Student.h"
+#include "PersonManager.h"
+#include "CourseManager.h"
 
 #include <iostream>
 #include <string>
@@ -17,8 +19,10 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "uk_UA.utf8");
 
+   PersonManager personManager("people_data.txt"); // Создание менеджера
+   CourseManager courseManager; // Создание менеджера курсов
+
     int choice;
-    vector<Human> humans; // Вектор для хранения информации о людях
 
     while (true) {
         // Выводим меню
@@ -38,9 +42,9 @@ int main() {
         {
             // Добавление студента
             Student student;
-            student.putInfoStudent(); // Заполнение информации о студенте
+            student.putInfo(); // Заполнение информации о студенте
             student.setRoles("student"); // Установка роли студента
-            humans.push_back(student); // Добавление в вектор
+            personManager.addStudent(student); // Добавление в вектор
             cout << "Студент успішно доданий!" << endl;
         }
         break;
@@ -48,13 +52,42 @@ int main() {
         {
             // Добавление учителя
             Teacher teacher;
-            teacher.putInfoTeacher(); // Заполнение информации об учителе
+            teacher.putInfo(); // Заполнение информации об учителе
             teacher.setRoles("teacher"); // Установка роли учителя
-            humans.push_back(teacher); // Добавление в вектор
+            personManager.addTeacher(teacher); // Добавление в вектор
             cout << "Вчитель успішно доданий!" << endl;
         }
         break;
-      
+        case 3:
+        {
+            // Добавление учителя
+            Teacher teacher;
+            teacher.putInfo(); // Заполнение информации об учителе
+            teacher.setRoles("teacher"); // Установка роли учителя
+            //humans.push_back(teacher); // Добавление в вектор
+            cout << "Вчитель успішно доданий!" << endl;
+        }
+        break;
+        case 4:
+        {
+            // Добавление учителя
+            Teacher teacher;
+            teacher.putInfo(); // Заполнение информации об учителе
+            teacher.setRoles("teacher"); // Установка роли учителя
+            //humans.push_back(teacher); // Добавление в вектор
+            cout << "Вчитель успішно доданий!" << endl;
+        }
+        break;
+        case 5:
+        {
+            // Добавление учителя
+            Teacher teacher;
+            teacher.putInfo(); // Заполнение информации об учителе
+            teacher.setRoles("teacher"); // Установка роли учителя
+            //humans.push_back(teacher); // Добавление в вектор
+            cout << "Вчитель успішно доданий!" << endl;
+        }
+        break;
 
 
         case 6:

@@ -191,8 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h" />
+    <ClInclude Include="PersonManager.h" />
     <ClInclude Include="Student.h" />
-    <ClInclude Include="StudyCourse.h" />
+    <ClInclude Include="CourseManager.h" />
     <ClInclude Include="Teacher.h" />
     <ClInclude Include="Tokens.h" />
   </ItemGroup>

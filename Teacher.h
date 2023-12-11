@@ -48,16 +48,16 @@ public:
         }
     }
 
-    void putInfoTeacher() {
-        putInfoHuman();
+    void putInfo() override {
+        Human::putInfo();
         cout << "Введіть предмет викладача:"; getline(cin, subject);
         cout << "Введіть стаж роботи:"; cin >> workExperience;
         cout << "Введіть зарплату:"; cin >> salary;
         cin.ignore();
     }
     
-    void printInfoTeacher() const {
-        printInfoHuman(); 
+    void printInfo() const override {
+        Human::printInfo(); 
         cout << "Стаж роботи: " << workExperience << " років" << endl;
         cout << "Курс який веде викладач: " << subject << endl;
         cout << "Зарплатня: " << salary << " грн" << endl;
